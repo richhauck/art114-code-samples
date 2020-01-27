@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Exercise 2</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    .wrapper{
+      display:flex;
+      background-color: lightgray;
+      margin-bottom: 4em;
+    }
+    /* Set Colors */
+    .wrapper:nth-child(1){
+      background-color: cadetblue;
+    }
+    .wrapper:nth-child(2){
+      background-color:lightcoral;
+    }
+    .wrapper:nth-child(3){
+      background-color:royalblue;
+    }
+    .wrapper:nth-child(4){
+      background-color:violet;
+    }
+    .wrapper.col{
+      flex-direction: column;
+    }
+    .wrapper.row{
+      flex-direction: row;
+    }
+    .wrapper.row > div{
+      flex-grow: 1;
+    }
+    .wrapper.start{
+      justify-content: flex-start;
+    }
+    .wrapper.end{
+      justify-content: flex-end;
+    }
+    .wrapper.endpoints{
+      justify-content: space-between;
+    }
+    .wrapper div{
+      background-color: white;
+      margin:10px;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Exercise 2</h1>
+  <div class="wrapper col">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+  </div>
+
+  <div class="wrapper row">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+  </div>
+
+  <div class="wrapper start">
+    <div>A</div>
+    <div>B</div>
+  </div>
+
+  <div class="wrapper end">
+    <div>D</div>
+    <div>E</div>
+  </div>
+  
+  <div class="wrapper endpoints">
+    <div>A</div>
+    <div>E</div>
+  </div>
+
+
+</body>
+</html>

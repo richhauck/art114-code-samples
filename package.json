@@ -1,0 +1,12 @@
+{
+  "name": "Art 114 Code Samples",
+  "version": "1.0.0",
+  "description": "Code Exercises and examples for Art 114",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rdhauck@hacc.edu",
+  "license": "ISC"
+}
